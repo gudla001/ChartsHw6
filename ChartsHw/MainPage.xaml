@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage   xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    xmlns:local="clr-namespace:ChartsHw"
+    x:Class="ChartsHw.MainPage">
+    <StackLayout>
+        <microcharts:ChartView
+            x:Name="Chart1"
+            HeightRequest="200"/>
+        <microcharts:ChartView
+            x:Name="Chart2"
+            HeightRequest="200" />
+        <microcharts:ChartView
+            x:Name="Chart3"
+            HeightRequest="400" />
+        
+    
+    <Picker x:Name="MainPicker"
+            Title="Select a chart"
+            SelectedIndexChanged="Handle_SelectedIndexChanged"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            TextColor="Navy"
+            FontSize="Large"
+            FontAttributes="Bold"/>
+ </StackLayout>       
+</ContentPage>
